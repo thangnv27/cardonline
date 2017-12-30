@@ -1,0 +1,21 @@
+== Version 0.4 (2014-..-..)
+- Optimize admin code
+- Update system\inc\functions.php
+- htmlentities value for input field
+
+== Version 0.3 (2014-07-16)
+- Integrate Amazon SES
+- Upload file via remote url
+- Detect file extension by mime
+- Fix multi-lang for post status
+- Prepare statement query where string
+- Optimize category
+
+== Version 0.2 (2014-06-13)
+- Rút gọn ngôn ngữ
+- FTP
+- Using database file
+- Minify HTML
+
+== Version 0.1 (2014-04-07)
+- Phiên bản đầu tiên

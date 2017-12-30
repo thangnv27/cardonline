@@ -1,0 +1,12 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+<filesMatch ".(php)$">
+order deny,allow
+Deny from all
+</filesMatch>
+
+#<filesMatch "^(index|login|resetpassword).php$">
+#order deny,allow
+#Allow from all
+#</filesMatch>

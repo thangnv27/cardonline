@@ -1,0 +1,1 @@
+On this, each folder is a template.

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <message>
+        <phase name="error_occur">Error occur!</phase>
+        <phase name="empty_all">Please fill in all the fields</phase>
+        <phase name="email_not_found">E-mail not found in database</phase>
+        <phase name="login_error">Login error</phase>
+        <phase name="user_incorrect">Username or Password incorrect</phase>
+        <phase name="user_not_activate">Please activate your account before login</phase>
+        <phase name="name.empty">Name is required</phase>
+        <phase name="name.exists">Name already exists</phase>
+        <phase name="username.invalid">Username is invalid</phase>
+        <phase name="username.exists">Username already exists</phase>
+        <phase name="referer_not_exists">Referrer does not exists</phase>
+        <phase name="role_not_exists">Role does not exists</phase>
+        <phase name="email.invalid">E-mail address is invalid</phase>
+        <phase name="email.exists">E-mail address already exists</phase>
+        <phase name="email.not_exists">E-mail does not exists</phase>
+        <phase name="gender.invalid">Gender is invalid</phase>
+        <phase name="dob.invalid">Date Of Birth is invalid</phase>
+        <phase name="phone.invalid">Phone number is invalid</phase>
+        <phase name="empty_password">Please enter password</phase>
+        <phase name="password_no_match">Passwords does not match</phase>
+        <phase name="conform_password_incorrect">Confirm passwords incorrect</phase>
+        <phase name="create_success">Created successfully!</phase>
+        <phase name="delete_success">Deleted successfully!</phase>
+        <phase name="update_success">Updated successfully!</phase>
+        <phase name="activate_success">Activated successfully!</phase>
+        <phase name="publish_success">Published successfully!</phase>
+        <phase name="move2trash_success">Move to trash successfully!</phase>
+        <phase name="active_success">Active successfully!</phase>
+        <phase name="cancel_success">Canceled successfully!</phase>
+        <phase name="some_category_contains_posts">There are some categories contains article should not be deleted.</phase>
+        <phase name="category_contains_posts">contains article should not be deleted.</phase>
+        <phase name="empty_menu_name">Please select a Menu before add new.</phase>
+        <phase name="mail_send_success">Sent successfully, please check your inbox!</phase>
+        <phase name="mail.create_user.subject">Welcome, {name}!</phase>
+        <phase name="mail.create_user.body"><![CDATA[
+            <p>Hello {name},</p>
+            <p>Your account has been created at {sitename}. You can log in using the username and password below:<br />
+            <strong>Username:</strong> {username}<br />
+            <strong>Password:</strong> {password}<br />
+            <strong>Login URL:</strong> <a href="{login_url}">{login_url}</a><br /><br />
+            </p>
+            <p>Thank you,<br /><strong>{sitename}</strong></p>
+        ]]></phase>
+        <phase name="mail.forgotpassword.subject">Forgot password, {name}!</phase>
+        <phase name="mail.forgotpassword.body"><![CDATA[
+            <p>Hello {name},</p>
+            <p>You had reset your password at {sitename}. You can log in using the username and password below:<br />
+            <strong>Username:</strong> {username}<br />
+            <strong>Password:</strong> {password}<br />
+            <strong>Login URL:</strong> <a href="{login_url}">{login_url}</a><br /><br />
+            </p>
+            <p>Thank you,<br /><strong>{sitename}</strong></p>
+        ]]></phase>
+        <phase name="mail.booking.subject">Info booking tour!</phase>
+        <phase name="mail.booking.body"><![CDATA[
+            <p>Hello {name},</p>
+            <p>We get the information you submitted from {sitename}:<br />
+            <strong>First name:</strong> {fname}<br />
+            <strong>Last name:</strong> {lname}<br />
+            <strong>Email:</strong> {email}<br />
+            <strong>Telephone number:</strong> {phone}<br />
+            <strong>Estimated duration:</strong> {duration}<br />
+            <strong>Country of departure:</strong> {country}<br />
+            <strong>Num of participants:</strong> {number}<br />
+            <strong>Adults:</strong> {adults}<br />
+            <strong>Children:</strong> {children}<br />
+            <strong>Note:</strong> {note}<br />
+            <br /><br />
+            </p>
+            <p>Thank you,<br /><strong>{sitename}</strong></p>
+        ]]></phase>
+    </message>
+    <context>
+        <phase name="none">None</phase>
+        <phase name="options">Options</phase>
+        <phase name="general">General</phase>
+        <phase name="continue">Continue</phase>
+        <phase name="select_lang">Select language</phase>
+        <phase name="all">All</phase>
+        <phase name="draft">Draft</phase>
+        <phase name="trash">Trash</phase>
+        <phase name="pending">Pending</phase>
+        <phase name="inprogress">In Progress</phase>
+        <phase name="shipping">Shipping</phase>
+        <phase name="shipped">Shipped</phase>
+        <phase name="paid">Paid</phase>
+        <phase name="canceled">Canceled</phase>
+        <phase name="view_all_categories">View all categories</phase>
+        <phase name="view_all_groups">View all groups</phase>
+        <phase name="permission_for">Permission for </phase>
+        <phase name="image">Image</phase>
+        <phase name="images">Images</phase>
+        <phase name="browse">Browse</phase>
+        <phase name="details">Details</phase>
+        <phase name="settings">Settings</phase>
+        <phase name="logout">Logout</phase>
+        <phase name="logout.confirm">Are you sure you want to logout?</phase>
+        <phase name="guest">Guest</phase>
+        <phase name="start_date">Start date</phase>
+        <phase name="end_date">End date</phase>
+        <phase name="more">More</phase>
+        <phase name="yes">Yes</phase>
+        <phase name="no">No</phase>
+        <phase name="summary">Summary</phase>
+        <phase name="example">Example</phase>
+        <phase name="contact_info">Contact Info</phase>
+        <phase name="footer_info">Footer Info</phase>
+        <phase name="email">Email</phase>
+        <phase name="phone">Phone</phase>
+        <phase name="address">Address</phase>
+        <phase name="profile">Profile</phase>
+        <phase name="status">Status</phase>
+        <phase name="title">Title</phase>
+        <phase name="slug">Slug</phase>
+        <phase name="slug.error.exists"><![CDATA[
+            <p>Slug already exists</p>
+        ]]></phase>
+        <phase name="categories">Categories</phase>
+        <phase name="categories.error.empty"><![CDATA[
+            <p>Please select categories</p>
+        ]]></phase>
+        <phase name="file">File</phase>
+        <phase name="media">Media</phase>
+        <phase name="destination">Destination</phase>
+    </context>
+    <action>
+        <phase name="bulkActions">Bulk Actions</phase>
+        <phase name="selectMenu">Select Menu</phase>
+        <phase name="update">Update</phase>
+        <phase name="save">Save</phase>
+        <phase name="add">Add</phase>
+        <phase name="addnew">Add new</phase>
+        <phase name="addnew.post">Add new post</phase>
+        <phase name="addnew.product">Add new product</phase>
+        <phase name="view">View</phase>
+        <phase name="edit">Edit</phase>
+        <phase name="remove">Remove</phase>
+        <phase name="delete">Delete</phase>
+        <phase name="delete.confirm">Are you sure you want to delete?</phase>
+        <phase name="cancel">Cancel</phase>
+        <phase name="cancel.confirm">Are you sure you want to cancel?</phase>
+        <phase name="permission">Permission</phase>
+        <phase name="apply">Apply</phase>
+        <phase name="filter">Filter</phase>
+        <phase name="select">Select</phase>
+        <phase name="search">Search</phase>
+        <phase name="send">Send</phase>
+        <phase name="submit">Submit</phase>
+        <phase name="active">Active</phase>
+        <phase name="activate">Activate</phase>
+        <phase name="activate.confirm">Are you sure you want to activate?</phase>
+        <phase name="activation">Activation</phase>
+        <phase name="publish">Publish</phase>
+        <phase name="move2trash">Move to trash</phase>
+    </action>
+    <navigation>
+        <phase name="back">Back</phase>
+        <phase name="previous">Previous</phase>
+        <phase name="next">Next</phase>
+    </navigation>
+    <statistics>
+        <phase name="useronline">User online</phase>
+        <phase name="visitor">Visitor</phase>
+        <phase name="visit">Visit</phase>
+        <phase name="today">Today</phase>
+        <phase name="yesterday">Yesterday</phase>
+        <phase name="week">Week</phase>
+        <phase name="month">Month</phase>
+        <phase name="year">Year</phase>
+        <phase name="total">Total</phase>
+        <phase name="referred">Referred</phase>
+        <phase name="url">URL</phase>
+        <phase name="browser">Browser</phase>
+        <phase name="browsers">Browsers</phase>
+        <phase name="browser_statistics">Browser Statistics</phase>
+        <phase name="platform">Platform</phase>
+        <phase name="recent_visitors">Recent Visitors</phase>
+        <phase name="search_words">Search words</phase>
+        <phase name="latest_search_words">Latest search words</phase>
+        <phase name="date">Date</phase>
+        <phase name="location">Location</phase>
+        <phase name="keyword">Keyword</phase>
+        <phase name="adwords">AdWords</phase>
+        <phase name="referrers">Referrers</phase>
+        <phase name="referring_sites">Referring sites</phase>
+        <phase name="top_referring_sites">Top referring sites</phase>
+        <phase name="referring_url">Referring URL</phase>
+        <phase name="reference">Reference</phase>
+        <phase name="top_countries">Top Countries</phase>
+        <phase name="rank">Rank</phase>
+        <phase name="flag">Flag</phase>
+        <phase name="country">Country</phase>
+        <phase name="visit_count">Visit Count</phase>
+        <phase name="search_engine_referrers">Search Engine Referrals</phase>
+        <phase name="search_engine_referrers_chart">Search Engine Referrers Statistical Chart</phase>
+        <phase name="hits_statistical_chart">Hits Statistical Chart</phase>
+        <phase name="hits_statistics">Hits Statistics</phase>
+        <phase name="searches_statistics">Searches Statistics</phase>
+        <phase name="daily_total">Daily total</phase>
+        <phase name="ad.click.confirm">This is ad link, maybe you will be charged for this click. Are you sure want to redirect to this link?</phase>
+    </statistics>
+    <seo>
+        <phase name="preview">Snippet Preview</phase>
+        <phase name="keyword">Focus Keyword</phase>
+        <phase name="title">SEO Title</phase>
+        <phase name="title.desc"><![CDATA[
+            Title display in search engines is limited to 70 chars, <span id="seo_title-length"></span> chars left.
+        ]]></phase>
+        <phase name="description">Meta Description</phase>
+        <phase name="description.desc"><![CDATA[
+            The <code>meta</code> description will be limited to 160 chars, <span id="seo_metadesc-length"></span> chars left. 
+        ]]></phase>
+    </seo>
+    <page name="dashboard">
+        <phase name="title">Dashboard</phase>
+        <phase name="title.welcome">Welcome</phase>
+        <phase name="posts">Posts</phase>
+        <phase name="products">Products</phase>
+        <phase name="users">Users</phase>
+        <phase name="pending_orders">Pending Orders</phase>
+    </page>
+    <page name="language">
+        <phase name="title">Languages</phase>
+        <phase name="title.index">Language Management</phase>
+        <phase name="flag">Flag</phase>
+        <phase name="name">Name</phase>
+        <phase name="code">Code</phase>
+        <phase name="iso">ISO</phase>
+        <phase name="locale">Locale</phase>
+    </page>
+    <page name="user">
+        <phase name="label">User</phase>
+        <phase name="labels">Users</phase>
+        <phase name="title.index">Users Management</phase>
+        <phase name="title.addnew">Add new user</phase>
+        <phase name="title.edit">Edit User</phase>
+        <phase name="title.edit.profile">Your profile</phase>
+        <phase name="title.permission">Permission User</phase>
+        <phase name="title.login">Login</phase>
+        <phase name="login">Login</phase>
+        <phase name="forgot_password">Forgot Password?</phase>
+        <phase name="firstname">First name</phase>
+        <phase name="lastname">Last name</phase>
+        <phase name="username">Username</phase>
+        <phase name="email">E-mail address</phase>
+        <phase name="password">Password</phase>
+        <phase name="confirm_password">Confirm password</phase>
+        <phase name="referer">Referer</phase>
+        <phase name="group">User Group</phase>
+        <phase name="gender">Gender</phase>
+        <phase name="dob">Date Of Birth</phase>
+        <phase name="phone">Phone</phase>
+        <phase name="coin">Coin</phase>
+        <phase name="website">Website</phase>
+        <phase name="yahoo">Yahoo</phase>
+        <phase name="skype">Skype</phase>
+        <phase name="about">About</phase>
+        <phase name="registered_date">Registered Date</phase>
+        <phase name="require_confirm">Require confirm</phase>
+        <phase name="require_confirm.description">There will be a confirmation letter sent to the registered email address.</phase>
+    </page>
+    <page name="usergroup">
+        <phase name="label">User Group</phase>
+        <phase name="labels">User Groups</phase>
+        <phase name="title.index">User Groups Management</phase>
+        <phase name="title.permission">Permission Group</phase>
+        <phase name="title.edit">Edit Group</phase>
+        <phase name="role">Role</phase>
+        <phase name="name">Name</phase>
+    </page>
+    <page name="category">
+        <phase name="label">Category</phase>
+        <phase name="labels">Categories</phase>
+        <phase name="title.index">Categories Management</phase>
+        <phase name="title.addnew">Add new Category</phase>
+        <phase name="title.edit">Edit Category</phase>
+        <phase name="name">Name</phase>
+        <phase name="name.placeholder">Enter category name</phase>
+        <phase name="name.error.empty"><![CDATA[
+            <p>Category name is required</p>
+        ]]></phase>
+        <phase name="name.error.exists"><![CDATA[
+            <p>Category name already exists</p>
+        ]]></phase>
+        <phase name="parent">Parent</phase>
+        <phase name="description">Description</phase>
+        <phase name="image">Image</phase>
+    </page>
+    <page name="page">
+        <phase name="label">Page</phase>
+        <phase name="labels">Pages</phase>
+        <phase name="page.index">Page Management</phase>
+        <phase name="page.addnew">Add new page</phase>
+        <phase name="page.edit">Edit page</phase>
+        <phase name="title.placeholder">Enter title here</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Title is required</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Page title already exists</p>
+        ]]></phase>
+        <phase name="date">Date</phase>
+        <phase name="view">View</phase>
+        <phase name="content">Content</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Content is required</p>
+        ]]></phase>
+    </page>
+    <page name="post">
+        <phase name="label">Post</phase>
+        <phase name="labels">Posts</phase>
+        <phase name="page.index">Post Management</phase>
+        <phase name="page.addnew">Add new post</phase>
+        <phase name="page.edit">Edit post</phase>
+        <phase name="title.placeholder">Enter title here</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Title is required</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Post title already exists</p>
+        ]]></phase>
+        <phase name="author">Author</phase>
+        <phase name="date">Date</phase>
+        <phase name="view">View</phase>
+        <phase name="excerpt">Excerpt</phase>
+        <phase name="content">Content</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Content is required</p>
+        ]]></phase>
+        <phase name="thumbnail">Thumbnail</phase>
+        <phase name="image">Image</phase>
+        <phase name="tags">Tags</phase>
+    </page>
+    <page name="tour">
+        <phase name="label">Tour</phase>
+        <phase name="labels">Tours</phase>
+        <phase name="page.index">Tour Management</phase>
+        <phase name="page.addnew">Add new tour</phase>
+        <phase name="page.edit">Edit tour</phase>
+        <phase name="title.placeholder">Enter title here</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Title is required</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Product title already exists</p>
+        ]]></phase>
+        <phase name="author">Author</phase>
+        <phase name="date">Date</phase>
+        <phase name="view">View</phase>
+        <phase name="excerpt">Excerpt</phase>
+        <phase name="content">Content</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Content is required</p>
+        ]]></phase>
+        <phase name="thumbnail">Thumbnail</phase>
+        <phase name="image">Image</phase>
+        <phase name="tags">Tags</phase>
+        <phase name="price">Price</phase>
+        <phase name="destination">Destination</phase>
+        <phase name="duration">Duration</phase>
+        <phase name="travel_style">Travel style</phase>
+    </page>
+    <page name="hotel">
+        <phase name="label">Hotel</phase>
+        <phase name="labels">Hotels</phase>
+        <phase name="page.index">Hotel Management</phase>
+        <phase name="page.addnew">Add new hotel</phase>
+        <phase name="page.edit">Edit hotel</phase>
+        <phase name="title.placeholder">Enter title here</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Title is required</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Product title already exists</p>
+        ]]></phase>
+        <phase name="author">Author</phase>
+        <phase name="date">Date</phase>
+        <phase name="view">View</phase>
+        <phase name="excerpt">Excerpt</phase>
+        <phase name="content">Content</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Content is required</p>
+        ]]></phase>
+        <phase name="thumbnail">Thumbnail</phase>
+        <phase name="image">Image</phase>
+        <phase name="tags">Tags</phase>
+        <phase name="price">Price</phase>
+    </page>
+    <page name="slider">
+        <phase name="label">Slider</phase>
+        <phase name="labels">Sliders</phase>
+        <phase name="page.index">Slider Management</phase>
+        <phase name="page.addnew">Add new slide</phase>
+        <phase name="page.edit">Edit slide</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Title is required</p>
+        ]]></phase>
+        <phase name="link">Link</phase>
+        <phase name="link.error.empty"><![CDATA[
+            <p>Link is required</p>
+        ]]></phase>
+        <phase name="image">Image</phase>
+        <phase name="displayorder">Display order</phase>
+        <phase name="displayorder.error.invalid"><![CDATA[
+            <p>Display order is invalid</p>
+        ]]></phase>
+    </page>
+    <page name="menu">
+        <phase name="label">Menu</phase>
+        <phase name="title.index">Menu Management</phase>
+        <phase name="title.addnew">Add new menu</phase>
+        <phase name="title.edit">Edit menu</phase>
+        <phase name="url">URL</phase>
+        <phase name="image">Image</phase>
+        <phase name="description">Description</phase>
+        <phase name="parent">Parent</phase>
+        <phase name="displayorder">Display order</phase>
+    </page>
+    <page name="option">
+        <phase name="title.index">General settings</phase>
+        <phase name="name">Site name</phase>
+        <phase name="description">Meta description</phase>
+        <phase name="keywords">Meta keywords</phase>
+        <phase name="admin_email">Admin email</phase>
+        <phase name="ga_id">Google Analytics ID</phase>
+    </page>
+    <page name="order">
+        <phase name="label">Order</phase>
+        <phase name="labels">Orders</phase>
+        <phase name="title.index">Orders Management</phase>
+        <phase name="title.view">Order details</phase>
+        <phase name="customer">Customer</phase>
+        <phase name="customer_info">Customer Information</phase>
+        <phase name="ship_info">Shipping Information</phase>
+        <phase name="order_info">Order Information</phase>
+        <phase name="products">Products</phase>
+        <phase name="amount">Amount</phase>
+        <phase name="status">Status</phase>
+        <phase name="status.error.invalid"><![CDATA[
+            <p>Status order is invalid</p>
+        ]]></phase>
+        <phase name="delivery_status">Delivery status</phase>
+        <phase name="delivery">Delivery</phase>
+        <phase name="delivery.error.invalid"><![CDATA[
+            <p>Delivery order is invalid</p>
+        ]]></phase>
+        <phase name="fullname">Fullname</phase>
+        <phase name="receiver">Receiver</phase>
+        <phase name="email">Email</phase>
+        <phase name="phone">Phone</phase>
+        <phase name="passport">Passport</phase>
+        <phase name="address">Address</phase>
+        <phase name="city">City</phase>
+        <phase name="payment_method">Payment method</phase>
+        <phase name="discount">Discount</phase>
+        <phase name="total_amount">Total amount</phase>
+        <phase name="product_name">Product Name</phase>
+        <phase name="price">Price</phase>
+        <phase name="quantity">Quantity</phase>
+        <phase name="amount">Amount</phase>
+        <phase name="date">Date</phase>
+    </page>
+</language>

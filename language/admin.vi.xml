@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <message>
+        <phase name="error_occur">Xảy ra lỗi!</phase>
+        <phase name="empty_all">Xin vui lòng điền vào tất cả các trường</phase>
+        <phase name="email_not_found">Địa chỉ E-mail không tồn tại</phase>
+        <phase name="login_error">Đăng nhập lỗi</phase>
+        <phase name="user_incorrect">Tài khoản hoặc mật khẩu không đúng</phase>
+        <phase name="user_not_activate">Vui lòng kích hoạt tài khoản của bạn trước khi đăng nhập</phase>
+        <phase name="name.empty">Trường tên là bắt buộc</phase>
+        <phase name="name.exists">Tên này đã được sử dụng</phase>
+        <phase name="username.invalid">Tài khoản không hợp lệ</phase>
+        <phase name="username.exists">Tài khoản đã tồn tại</phase>
+        <phase name="referer_not_exists">Người giới thiệu không tồn tại</phase>
+        <phase name="role_not_exists">Role không tồn tại</phase>
+        <phase name="email.invalid">Địa chỉ E-mail không hợp lệ</phase>
+        <phase name="email.exists">Địa chỉ E-mail đã được sử dụng</phase>
+        <phase name="email.not_exists">Địa chỉ E-mail không tồn tại</phase>
+        <phase name="gender.invalid">Giới tính không hợp lệ</phase>
+        <phase name="dob.invalid">Ngày sinh không hợp lệ</phase>
+        <phase name="phone.invalid">Số điện thoại không hợp lệ</phase>
+        <phase name="empty_password">Vui lòng nhập mật khẩu</phase>
+        <phase name="password_no_match">Mật khẩu không phù hợp</phase>
+        <phase name="conform_password_incorrect">Xác nhận mật khẩu không đúng</phase>
+        <phase name="create_success">Tạo mới thành công!</phase>
+        <phase name="delete_success">Xóa thành công!</phase>
+        <phase name="update_success">Cập nhật thành công!</phase>
+        <phase name="activate_success">Kích hoạt thành công!</phase>
+        <phase name="publish_success">Xuất bản thành công!</phase>
+        <phase name="move2trash_success">Chuyển đến thùng rác thành công!</phase>
+        <phase name="active_success">Hoạt động thành công!</phase>
+        <phase name="cancel_success">Hủy thành công!</phase>
+        <phase name="some_category_contains_posts">Có một số danh mục còn chứa bài viết nên không thể xóa.</phase>
+        <phase name="category_contains_posts">chứa bài viết nên không thể xóa.</phase>
+        <phase name="empty_menu_name">Vui lòng chọn một Menu trước khi thêm mới.</phase>
+        <phase name="mail_send_success">Gửi thành công, vui lòng kiểm tra hòm thư của bạn!</phase>
+        <phase name="mail.create_user.subject">Chào mừng, {name}!</phase>
+        <phase name="mail.create_user.body"><![CDATA[
+            <p>Chào {name},</p>
+            <p>Tài khoản của bạn đã được tạo ở {sitename}. Bạn có thể sử dụng tài khoản và mật khẩu dưới đây để đăng nhập:<br />
+            <strong>Tài khoản:</strong> {username}<br />
+            <strong>Mật khẩu:</strong> {password}<br />
+            <strong>Link đăng nhập:</strong> <a href="{login_url}">{login_url}</a><br /><br />
+            </p>
+            <p>Thân ái,<br /><strong>{sitename}</strong></p>
+        ]]></phase>
+        <phase name="mail.forgotpassword.subject">Forgot password, {name}!</phase>
+        <phase name="mail.forgotpassword.body"><![CDATA[
+            <p>Chào {name},</p>
+            <p>Bạn đã reset mật khẩu tại {sitename}. Bạn có thể sử dụng tài khoản và mật khẩu dưới đây để đăng nhập:<br />
+            <strong>Tài khoản:</strong> {username}<br />
+            <strong>Mật khẩu:</strong> {password}<br />
+            <strong>Link đăng nhập:</strong> <a href="{login_url}">{login_url}</a><br /><br />
+            </p>
+            <p>Thân ái,<br /><strong>{sitename}</strong></p>
+        ]]></phase>
+    </message>
+    <context>
+        <phase name="code">Code</phase>
+        <phase name="used">Đã dùng</phase>
+        <phase name="noused">Chưa dùng</phase>
+        <phase name="none">Không</phase>
+        <phase name="options">Tùy chọn</phase>
+        <phase name="general">Chung</phase>
+        <phase name="continue">Tiếp tục</phase>
+        <phase name="select_lang">Chọn ngôn ngữ</phase>
+        <phase name="all">Tất cả</phase>
+        <phase name="draft">Bản nháp</phase>
+        <phase name="trash">Thùng rác</phase>
+        <phase name="pending">Chờ đợi</phase>
+        <phase name="inprogress">Đang xử lý</phase>
+        <phase name="shipping">Đang chuyển hàng</phase>
+        <phase name="shipped">Đã giao hàng</phase>
+        <phase name="paid">Đã thanh toán</phase>
+        <phase name="canceled">Đã hủy</phase>
+        <phase name="view_all_categories">Xem tất cả danh mục</phase>
+        <phase name="view_all_groups">Xem tất cả nhóm</phase>
+        <phase name="permission_for">Phân quyền cho </phase>
+        <phase name="image">Hình ảnh</phase>
+        <phase name="images">Hình ảnh</phase>
+        <phase name="browse">Duyệt</phase>
+        <phase name="details">Chi tiết</phase>
+        <phase name="settings">Cài đặt</phase>
+        <phase name="logout">Đăng xuất</phase>
+        <phase name="logout.confirm">Bạn có chắc chắn muốn đăng xuất không?</phase>
+        <phase name="guest">Khách</phase>
+        <phase name="start_date">Ngày bắt đầu</phase>
+        <phase name="end_date">Ngày kết thúc</phase>
+        <phase name="more">Xem thêm</phase>
+        <phase name="yes">Có</phase>
+        <phase name="no">Không</phase>
+        <phase name="summary">Tóm tắt</phase>
+        <phase name="example">Ví dụ</phase>
+        <phase name="contact_info">Thông tin liên hệ</phase>
+        <phase name="footer_info">Thông tin cuối trang</phase>
+        <phase name="email">Email</phase>
+        <phase name="phone">Điện thoại</phase>
+        <phase name="address">Địa chỉ</phase>
+        <phase name="profile">Hồ sơ</phase>
+        <phase name="status">Trang thái</phase>
+        <phase name="title">Tiêu đề</phase>
+        <phase name="slug">Đường dẫn tĩnh</phase>
+        <phase name="slug.error.exists"><![CDATA[
+            <p>Đường dẫn tĩnh đã được sử dụng</p>
+        ]]></phase>
+        <phase name="categories">Danh mục</phase>
+        <phase name="categories.error.empty"><![CDATA[
+            <p>Vui lòng chọn danh mục</p>
+        ]]></phase>
+        <phase name="file">File</phase>
+        <phase name="media">Media</phase>
+        <phase name="destination">Điểm đến</phase>
+    </context>
+    <action>
+        <phase name="bulkActions">Hành động</phase>
+        <phase name="selectMenu">Chọn menu</phase>
+        <phase name="update">Cập nhật</phase>
+        <phase name="save">Lưu</phase>
+        <phase name="add">Thêm</phase>
+        <phase name="addnew">Thêm mới</phase>
+        <phase name="addnew.post">Thêm mới bài viết</phase>
+        <phase name="addnew.product">Thêm mới sản phẩm</phase>
+        <phase name="view">Xem</phase>
+        <phase name="edit">Chỉnh sửa</phase>
+        <phase name="remove">Loại bỏ</phase>
+        <phase name="delete">Xóa</phase>
+        <phase name="delete.confirm">Bạn có chắc chắn muốn xóa không?</phase>
+        <phase name="cancel">Cancel</phase>
+        <phase name="cancel.confirm">Bạn có chắc chắn muốn hủy không?</phase>
+        <phase name="permission">Phân quyền</phase>
+        <phase name="apply">Áp dụng</phase>
+        <phase name="filter">Lọc</phase>
+        <phase name="select">Chọn</phase>
+        <phase name="search">Tìm</phase>
+        <phase name="send">Gửi</phase>
+        <phase name="submit">Gửi</phase>
+        <phase name="active">Hoạt động</phase>
+        <phase name="activate">Kích hoạt</phase>
+        <phase name="activate.confirm">Bạn có chắc chắn muốn kích hoạt không?</phase>
+        <phase name="activation">Kích hoạt</phase>
+        <phase name="publish">Xuất bản</phase>
+        <phase name="move2trash">Chuyển đến thùng rác</phase>
+    </action>
+    <navigation>
+        <phase name="back">Quay lại</phase>
+        <phase name="previous">Trước</phase>
+        <phase name="next">Tiếp theo</phase>
+    </navigation>
+    <statistics>
+        <phase name="useronline">Số người trực tuyến</phase>
+        <phase name="visitor">Khách</phase>
+        <phase name="visit">Truy cập</phase>
+        <phase name="today">Hôm nay</phase>
+        <phase name="yesterday">Hôm qua</phase>
+        <phase name="week">Tuần</phase>
+        <phase name="month">Tháng</phase>
+        <phase name="year">Năm</phase>
+        <phase name="total">Tổng</phase>
+        <phase name="referred">Referred</phase>
+        <phase name="url">URL</phase>
+        <phase name="browser">Trình duyệt</phase>
+        <phase name="browsers">Trình duyệt</phase>
+        <phase name="browser_statistics">Thống kê trình duyệt</phase>
+        <phase name="platform">Nền tảng</phase>
+        <phase name="recent_visitors">Khách thăm gần đây</phase>
+        <phase name="search_words">Từ khóa tìm kiếm</phase>
+        <phase name="latest_search_words">Từ khóa tìm kiếm mới nhất</phase>
+        <phase name="date">Ngày tháng</phase>
+        <phase name="location">Khu vực</phase>
+        <phase name="keyword">Từ khóa</phase>
+        <phase name="adwords">Quảng cáo</phase>
+        <phase name="referrers">Nguồn</phase>
+        <phase name="referring_sites">Trang web nguồn</phase>
+        <phase name="top_referring_sites">Trang web nguồn</phase>
+        <phase name="referring_url">URL</phase>
+        <phase name="reference">Số lượt</phase>
+        <phase name="top_countries">Quốc gia</phase>
+        <phase name="rank">Danh hiệu</phase>
+        <phase name="flag">Cờ</phase>
+        <phase name="country">Quốc gia</phase>
+        <phase name="visit_count">Lượt truy cập</phase>
+        <phase name="search_engine_referrers">Công cụ tìm kiếm</phase>
+        <phase name="search_engine_referrers_chart">Biểu đồ thống kê công cụ tìm kiếm</phase>
+        <phase name="hits_statistical_chart">Biểu đồ thống kê lượng truy cập</phase>
+        <phase name="hits_statistics">Thống kê lượng truy cập</phase>
+        <phase name="searches_statistics">Thống kê lưu lượng tìm kiếm</phase>
+        <phase name="daily_total">Tổng theo ngày</phase>
+        <phase name="ad.click.confirm">Đây là link quảng cáo, có thể bạn sẽ mất phí cho click này. Bạn có chắc chắn muốn chuyển hướng đến link này không?</phase>
+    </statistics>
+    <seo>
+        <phase name="preview">Xem trước kết quả</phase>
+        <phase name="keyword">Từ khóa tập trung</phase>
+        <phase name="title">Tiêu đề SEO</phase>
+        <phase name="title.desc"><![CDATA[
+            Tiêu đề hiển thị trong công cụ tìm kiếm được giới hạn trong 70 ký tự, <span id="seo_title-length"></span> còn lại.
+        ]]></phase>
+        <phase name="description">Mô tả</phase>
+        <phase name="description.desc"><![CDATA[
+            Mô tả <code>meta</code> sẽ được giới hạn 160 ký tự, <span id="seo_metadesc-length"></span> còn lại. 
+        ]]></phase>
+    </seo>
+    <page name="dashboard">
+        <phase name="title">Bảng điều khiển</phase>
+        <phase name="title.welcome">Chào mừng</phase>
+        <phase name="posts">Bài viết</phase>
+        <phase name="products">Sản phẩm</phase>
+        <phase name="users">Thành viên</phase>
+        <phase name="pending_orders">Đơn hàng chờ duyệt</phase>
+    </page>
+    <page name="language">
+        <phase name="title">Ngôn ngữ</phase>
+        <phase name="title.index">Quản lý ngôn ngữ</phase>
+        <phase name="flag">Cờ</phase>
+        <phase name="name">Tên</phase>
+        <phase name="code">CODE</phase>
+        <phase name="iso">ISO</phase>
+        <phase name="locale">Locale</phase>
+    </page>
+    <page name="user">
+        <phase name="label">Người dùng</phase>
+        <phase name="labels">Người dùng</phase>
+        <phase name="title.index">Quản lý người dùng</phase>
+        <phase name="title.addnew">Thêm mới</phase>
+        <phase name="title.edit">Chỉnh sửa</phase>
+        <phase name="title.edit.profile">Hồ sơ cá nhân của bạn</phase>
+        <phase name="title.permission">Phân quyền người dùng</phase>
+        <phase name="title.login">Đăng nhập</phase>
+        <phase name="login">Đăng nhập</phase>
+        <phase name="forgot_password">Quên mật khẩu?</phase>
+        <phase name="firstname">Tên</phase>
+        <phase name="lastname">Họ</phase>
+        <phase name="username">Tài khoản</phase>
+        <phase name="email">Địa chỉ E-mail</phase>
+        <phase name="password">Mật khẩu</phase>
+        <phase name="confirm_password">Xác nhận mật khẩu</phase>
+        <phase name="referer">Người giới thiệu</phase>
+        <phase name="group">Nhóm</phase>
+        <phase name="gender">Giới tính</phase>
+        <phase name="dob">Ngày sinh</phase>
+        <phase name="phone">Điện thoại</phase>
+        <phase name="coin">Tiền</phase>
+        <phase name="website">Website</phase>
+        <phase name="yahoo">Yahoo</phase>
+        <phase name="skype">Skype</phase>
+        <phase name="about">Tự bạch</phase>
+        <phase name="registered_date">Đăng ký ngày</phase>
+        <phase name="require_confirm">Yêu cầu xác nhận</phase>
+        <phase name="require_confirm.description">Sẽ có một thư yêu cầu xác nhận gửi đến địa chỉ email đăng ký.</phase>
+    </page>
+    <page name="usergroup">
+        <phase name="label">Nhóm người dùng</phase>
+        <phase name="labels">Nhóm người dùng</phase>
+        <phase name="title.index">Quản lý nhóm người dùng</phase>
+        <phase name="title.permission">Phân quyền nhóm</phase>
+        <phase name="title.edit">Chỉnh sửa</phase>
+        <phase name="role">Role</phase>
+        <phase name="name">Tên</phase>
+    </page>
+    <page name="category">
+        <phase name="label">Danh mục</phase>
+        <phase name="labels">Danh mục</phase>
+        <phase name="title.index">Quản lý danh mục</phase>
+        <phase name="title.addnew">Thêm mới</phase>
+        <phase name="title.edit">Chỉnh sửa danh mục</phase>
+        <phase name="name">Tên</phase>
+        <phase name="name.placeholder">Nhập tên danh mục</phase>
+        <phase name="name.error.empty"><![CDATA[
+            <p>Trường tên là bắt buộc</p>
+        ]]></phase>
+        <phase name="name.error.exists"><![CDATA[
+            <p>Tên này đã được sử dụng</p>
+        ]]></phase>
+        <phase name="parent">Danh mục cha</phase>
+        <phase name="description">Mô tả</phase>
+        <phase name="image">Hình ảnh</phase>
+    </page>
+    <page name="page">
+        <phase name="label">Trang</phase>
+        <phase name="labels">Trang</phase>
+        <phase name="page.index">Quản lý trang</phase>
+        <phase name="page.addnew">Thêm mới</phase>
+        <phase name="page.edit">Chỉnh sửa trang</phase>
+        <phase name="title.placeholder">Nhập tiêu đề</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Tiêu đề là bắt buộc</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Tiêu đề trang đã được sử dụng</p>
+        ]]></phase>
+        <phase name="date">Ngày đăng</phase>
+        <phase name="view">Xem</phase>
+        <phase name="content">Nội dung</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Nội dung là bắt buộc</p>
+        ]]></phase>
+    </page>
+    <page name="post">
+        <phase name="label">Bài viết</phase>
+        <phase name="labels">Bài viết</phase>
+        <phase name="page.index">Quản lý bài viết</phase>
+        <phase name="page.addnew">Thêm mới bài viết</phase>
+        <phase name="page.edit">Chỉnh sửa bài viết</phase>
+        <phase name="title.placeholder">Nhập tiêu đề</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Tiêu đề là bắt buộc</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Tiêu đề bài viết đã được sử dụng</p>
+        ]]></phase>
+        <phase name="author">Tác giả</phase>
+        <phase name="date">Ngày đăng</phase>
+        <phase name="view">Xem</phase>
+        <phase name="excerpt">Mô tả ngắn</phase>
+        <phase name="content">Nội dung</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Nội dung là bắt buộc</p>
+        ]]></phase>
+        <phase name="thumbnail">Ảnh đại diện</phase>
+        <phase name="image">Hình ảnh</phase>
+        <phase name="tags">Tags</phase>
+    </page>
+    <page name="tour">
+        <phase name="label">Tour</phase>
+        <phase name="labels">Tours</phase>
+        <phase name="page.index">Quản lý tour</phase>
+        <phase name="page.addnew">Thêm mới tour</phase>
+        <phase name="page.edit">Chỉnh sửa tour</phase>
+        <phase name="title">Tiêu dề</phase>
+        <phase name="title.placeholder">Nhập tiêu đề</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Tiêu đề là bắt buộc</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Tiêu đề sản phẩm đã được sử dụng</p>
+        ]]></phase>
+        <phase name="author">Tác giả</phase>
+        <phase name="date">Ngày đăng</phase>
+        <phase name="view">Xem</phase>
+        <phase name="excerpt">Mô tả ngắn</phase>
+        <phase name="content">Nội dung</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Nội dung là bắt buộc</p>
+        ]]></phase>
+        <phase name="thumbnail">Ảnh đại diện</phase>
+        <phase name="image">Hình ảnh</phase>
+        <phase name="tags">Tags</phase>
+        <phase name="price">Giá</phase>
+        <phase name="destination">Điểm đến</phase>
+        <phase name="duration">Thời hạn</phase>
+        <phase name="travel_style">Kiểu du lịch</phase>
+    </page>
+    <page name="hotel">
+        <phase name="label">Khách sạn</phase>
+        <phase name="labels">Khách sạn</phase>
+        <phase name="page.index">Quản lý khách sạn</phase>
+        <phase name="page.addnew">Thêm mới khách sạn</phase>
+        <phase name="page.edit">Chỉnh sửa khách sạn</phase>
+        <phase name="title">Tiêu dề</phase>
+        <phase name="title.placeholder">Nhập tiêu đề</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Tiêu đề là bắt buộc</p>
+        ]]></phase>
+        <phase name="title.error.exists"><![CDATA[
+            <p>Tiêu đề sản phẩm đã được sử dụng</p>
+        ]]></phase>
+        <phase name="author">Tác giả</phase>
+        <phase name="date">Ngày đăng</phase>
+        <phase name="view">Xem</phase>
+        <phase name="excerpt">Mô tả ngắn</phase>
+        <phase name="content">Nội dung</phase>
+        <phase name="content.error.empty"><![CDATA[
+            <p>Nội dung là bắt buộc</p>
+        ]]></phase>
+        <phase name="thumbnail">Ảnh đại diện</phase>
+        <phase name="image">Hình ảnh</phase>
+        <phase name="tags">Tags</phase>
+        <phase name="price">Giá</phase>
+    </page>
+    <page name="slider">
+        <phase name="label">Slider</phase>
+        <phase name="labels">Sliders</phase>
+        <phase name="page.index">Quản lý slider</phase>
+        <phase name="page.addnew">Thêm mới slide</phase>
+        <phase name="page.edit">Chỉnh sửa slide</phase>
+        <phase name="title.error.empty"><![CDATA[
+            <p>Tiêu đề là bắt buộc</p>
+        ]]></phase>
+        <phase name="link">Liên kết</phase>
+        <phase name="link.error.empty"><![CDATA[
+            <p>Liên kết là bắt buộc</p>
+        ]]></phase>
+        <phase name="image">Hình ảnh</phase>
+        <phase name="displayorder">Sắp xếp</phase>
+        <phase name="displayorder.error.invalid"><![CDATA[
+            <p>Sắp xếp không hợp lệ</p>
+        ]]></phase>
+    </page>
+    <page name="menu">
+        <phase name="label">Menu</phase>
+        <phase name="title.index">Quản lý Menu</phase>
+        <phase name="title.addnew">Thêm mới menu</phase>
+        <phase name="title.edit">Chỉnh sửa menu</phase>
+        <phase name="url">URL</phase>
+        <phase name="image">Hình ảnh</phase>
+        <phase name="description">Mô tả</phase>
+        <phase name="parent">Menu cha</phase>
+        <phase name="displayorder">Sắp xếp</phase>
+    </page>
+    <page name="option">
+        <phase name="title.index">Thiết lập chung</phase>
+        <phase name="name">Tiêu đề trang web</phase>
+        <phase name="description">Mô tả trang web</phase>
+        <phase name="keywords">Từ khóa trang web</phase>
+        <phase name="admin_email">Địa chỉ email quản trị</phase>
+        <phase name="ga_id">Google Analytics ID</phase>
+    </page>
+    <page name="order">
+        <phase name="label">Đơn hàng</phase>
+        <phase name="labels">Đơn hàng</phase>
+        <phase name="title.index">Quản lý đơn hàng</phase>
+        <phase name="title.view">Chi tiết đơn hàng</phase>
+        <phase name="customer">Khách hàng</phase>
+        <phase name="customer_info">Thông tin khách hàng</phase>
+        <phase name="ship_info">Thông tin vận chuyển</phase>
+        <phase name="order_info">Thông tin đơn hàng</phase>
+        <phase name="products">Sản phẩm</phase>
+        <phase name="amount">Tổng tiền</phase>
+        <phase name="status">Trạng thái đơn hàng</phase>
+        <phase name="status.error.invalid"><![CDATA[
+            <p>Trạng thái đơn hàng không hợp lệ</p>
+        ]]></phase>
+        <phase name="delivery_status">Trạng thái chuyển hàng</phase>
+        <phase name="delivery">Chuyển hàng</phase>
+        <phase name="delivery.error.invalid"><![CDATA[
+            <p>Trạng thái chuyển hàng không hợp lệ</p>
+        ]]></phase>
+        <phase name="fullname">Họ và tên</phase>
+        <phase name="receiver">Người nhận</phase>
+        <phase name="email">Email</phase>
+        <phase name="phone">Điện thoại</phase>
+        <phase name="passport">CMND</phase>
+        <phase name="address">Địa chỉ</phase>
+        <phase name="city">Tỉnh/Thành phố</phase>
+        <phase name="payment_method">Phương thức thanh toán</phase>
+        <phase name="discount">Giảm giá</phase>
+        <phase name="total_amount">Tổng thanh toán</phase>
+        <phase name="product_name">Tên sản phẩm</phase>
+        <phase name="price">Giá</phase>
+        <phase name="quantity">Số lượng</phase>
+        <phase name="amount">Tổng tiền</phase>
+        <phase name="date">Ngày</phase>
+    </page>
+</language>

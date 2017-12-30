@@ -1,0 +1,35 @@
+#DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteBase /TFW/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#RewriteRule ^(.*)$ index.php/$1 [QSA,L]
+
+#RewriteRule ^assets/(.+)$ public/$1 [QSA,L]
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
+
+# Enable compression
+<IfModule mod_deflate.c>
+#AddOutputFilter DEFLATE css js
+AddOutputFilter DEFLATE css js png jpg gif
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+ExpiresActive On
+ExpiresByType application/x-javascript A2592000
+</IfModule>
+# END Enable compression
+
+## Error
+#ErrorDocument 400 /public/400.shtml
+#ErrorDocument 401 /public/401.shtml
+ErrorDocument 403 /public/403.shtml
+ErrorDocument 404 /public/404.shtml
+ErrorDocument 405 /public/405.shtml
+ErrorDocument 500 /public/500.shtml
+#ErrorDocument 502 /public/502.shtml
+ErrorDocument 503 /public/503.shtml
+#ErrorDocument 504 /public/504.shtml

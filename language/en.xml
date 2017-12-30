@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <message>
+        <phase name="error_occur">Error occur!</phase>
+        <phase name="username.invalid">Username is invalid!</phase>
+        <phase name="username.exists">Username already exists</phase>
+        <phase name="empty_password">Vui lòng nhập mật khẩu!</phase>
+        <phase name="conform_password_incorrect">Confirm passwords incorrect!</phase>
+        <phase name="user_incorrect">Username or password is incorrect!</phase>
+        <phase name="user_not_activate">Account not activated!</phase>
+        <phase name="email.invalid">E-mail address is invalid!</phase>
+        <phase name="email.exists">E-mail address already exists!</phase>
+        <phase name="email.not_exists">E-mail does not exists!</phase>
+        <phase name="login_success">Login successfully!</phase>
+        <phase name="signup_success">Sign-Up successfully!</phase>
+        <phase name="signup_failure">Sign-Up failure!</phase>
+        <phase name="mail_send_success">Sent successfully, please check your inbox!</phase>
+        <phase name="mail.forgotpassword.subject">Forgot password, {name}!</phase>
+        <phase name="mail.forgotpassword.body"><![CDATA[
+            <p>Hello {name},</p>
+            <p>You had reset your password at {sitename}. You can log in using the username and password below:<br />
+            <strong>Username:</strong> {username}<br />
+            <strong>Password:</strong> {password}<br />
+            <strong>Login URL:</strong> <a href="{login_url}">{login_url}</a><br /><br />
+            </p>
+            <p>Thank you,<br /><strong>{sitename}</strong></p>
+        ]]></phase>
+    </message>
+</language>

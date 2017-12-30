@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <message>
+        <phase name="error_occur">Xảy ra lỗi!</phase>
+        <phase name="username.invalid">Tên đăng nhập không hợp lệ!</phase>
+        <phase name="username.exists">Tài khoản đã tồn tại</phase>
+        <phase name="empty_password">Vui lòng nhập mật khẩu!</phase>
+        <phase name="conform_password_incorrect">Xác nhận mật khẩu không đúng!</phase>
+        <phase name="user_incorrect">Sai tên đăng nhập hoặc mật khẩu!</phase>
+        <phase name="user_not_activate">Tài khoản chưa được kích hoạt!</phase>
+        <phase name="email.invalid">Địa chỉ E-mail không hợp lệ!</phase>
+        <phase name="email.exists">Địa chỉ E-mail đã được sử dụng!</phase>
+        <phase name="email.not_exists">Địa chỉ E-mail không tồn tại!</phase>
+        <phase name="login_success">Đăng nhập thành công!</phase>
+        <phase name="signup_success">Đăng ký thành công!</phase>
+        <phase name="signup_failure">Đăng ký lỗi!</phase>
+        <phase name="mail_send_success">Gửi thành công, vui lòng kiểm tra hòm thư của bạn!</phase>
+        <phase name="mail.forgotpassword.subject">Forgot password, {name}!</phase>
+        <phase name="mail.forgotpassword.body"><![CDATA[
+            <p>Chào {name},</p>
+            <p>Bạn đã reset mật khẩu tại {sitename}. Bạn có thể sử dụng tài khoản và mật khẩu dưới đây để đăng nhập:<br />
+            <strong>Tài khoản:</strong> {username}<br />
+            <strong>Mật khẩu:</strong> {password}<br />
+            <strong>Link đăng nhập:</strong> <a href="{login_url}">{login_url}</a><br /><br />
+            </p>
+            <p>Thân ái,<br /><strong>{sitename}</strong></p>
+        ]]></phase>
+    </message>
+</language>
